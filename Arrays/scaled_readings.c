@@ -26,14 +26,13 @@ int main(void) {
     int original_total = sum_array(readings, size);
 
     print_array(readings, size);
-    printf("Original Sum: %d\n", original_total);
     
     scale_array(readings, size, 2);
     print_array(readings, size);
 
     int scaled_total = sum_array(readings, size);
 
-    printf("Scaled Sum: %d\n", scaled_total);
+    printf("Original Sum: %d\tScaled Sum: %d\n",original_total, scaled_total);
 
     return 0;
 }
